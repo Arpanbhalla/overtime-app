@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pry', '~> 0.11.3'
 gem 'annotate', '~> 2.7', '>= 2.7.2'
+gem 'faker', '~> 1.8', '>= 1.8.7'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
