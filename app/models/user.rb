@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :posts
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   validates :email, :first_name, :last_name, presence: true
