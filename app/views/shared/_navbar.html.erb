@@ -1,0 +1,29 @@
+<nav class='custom-nav'>
+  <div class="nav-wrapper">
+    <!-- <a href="#" class="col s6 m6 l6 brand-logo">Logo</a> -->
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li>
+        <%= link_to 'Home', root_path %>
+      </li>
+      <li>
+        <%= link_to 'Time entries', posts_path %>
+      </li>
+    </ul>
+
+    <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<ul id="dropdown1" class="dropdown-content">
+  <li>
+    <%= link_to 'Edit Details', edit_user_registration_path %>
+  </li>
+  <li class="divider"></li>
+  <li>
+    <%= link_to 'Log out', destroy_user_session_path %>
+  </li>
+</ul>

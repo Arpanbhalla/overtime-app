@@ -7,6 +7,7 @@ end
 
 gem 'rails', '~> 5.1.4'
 gem 'devise', '~> 4.4'
+gem 'jquery-rails'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -17,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'pry', '~> 0.11.3'
 gem 'annotate', '~> 2.7', '>= 2.7.2'
 gem 'faker', '~> 1.8', '>= 1.8.7'
+gem 'materialize-sass', '~> 0.100.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
