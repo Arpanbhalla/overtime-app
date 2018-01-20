@@ -17,7 +17,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pry', '~> 0.11.3'
 gem 'annotate', '~> 2.7', '>= 2.7.2'
-gem 'faker', '~> 1.8', '>= 1.8.7'
 gem 'materialize-sass', '~> 0.100.2'
 
 group :development, :test do
@@ -26,6 +25,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
   gem 'selenium-webdriver'
+  gem 'factory_girl_rails', '~> 4.9'
+  gem 'faker', '~> 1.8', '>= 1.8.7'
 end
 
 group :development do

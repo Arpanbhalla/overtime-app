@@ -2,10 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   describe 'post creation' do
-    user = User.create(email: 'abc@example.com', first_name: 'John',
-                       last_name: 'Doe', password: 'chicken',
-                       password_confirmation: 'chicken')
-    post = Post.create(date: Date.today, rationale: 'Lorem Ipsum is simply dummy', user_id: user.id)
+    user = FactoryGirl.create(:user)
+
+    post = FactoryGirl.create(:post)
 
     context 'with valid params' do
       it 'can be be created' do
