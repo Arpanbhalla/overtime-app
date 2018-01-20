@@ -82,4 +82,4 @@ production:
   <<: *default
   database: overtime_app_production
   username: overtime_app
-  password: <%= ENV['OVERTIME_APP_DATABASE_PASSWORD'] %>
+  password: jw8s0F4
