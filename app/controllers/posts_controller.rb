@@ -1,5 +1,5 @@
   class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :set_post, only: [:show, :edit, :update]
   def index
     @posts = Post.all
   end
@@ -18,6 +18,18 @@
       redirect_to post_path(@post)
     else
       render new
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    @post.update_attributes(post_params)
+    if @post.save
+      redirect_to posts_path
+    else
+      render 'edit'
     end
   end
 
