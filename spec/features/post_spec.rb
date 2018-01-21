@@ -29,6 +29,11 @@ describe 'navigate' do
     before do
       visit new_post_path
     end
+
+    it 'has a link for creating new post' do
+      click_link 'new-post-link'
+      expect(page.status_code).to eq(200)
+    end
     it 'has a form that can be reached' do
       expect(page.status_code).to eq(200)
     end
@@ -70,6 +75,16 @@ describe 'navigate' do
 
         click_on 'Save'
         expect(User.last.posts.last.rationale).to eq('update rationale')
+      end
+    end
+
+    describe 'delete' do
+      it 'can be deleted' do
+        @post = FactoryGirl.create(:post)
+        visit posts_path
+        click_link "delete_post_#{@post.id}"
+
+        expect(page.status_code).to eq(200)
       end
     end
   end
