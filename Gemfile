@@ -18,6 +18,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'pry', '~> 0.11.3'
 gem 'annotate', '~> 2.7', '>= 2.7.2'
 gem 'materialize-sass', '~> 0.100.2'
+gem 'growl', '~> 1.0', '>= 1.0.3'
+gem 'gritter', '~> 1.2'
+gem 'rails_best_practices', '~> 1.19'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

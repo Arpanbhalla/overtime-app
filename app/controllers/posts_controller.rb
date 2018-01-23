@@ -12,12 +12,11 @@
   end
 
   def create
-    @post = Post.new(post_params)
-    @post.user_id = current_user.id
+    @post = current_user.posts.build(post_params)
     if @post.save
-      redirect_to post_path(@post)
+      redirect_to post_path(@post), notice: 'Your post was created successfully'
     else
-      render new
+      render 'new'
     end
   end
 
@@ -27,7 +26,7 @@
   def update
     @post.update_attributes(post_params)
     if @post.save
-      redirect_to posts_path
+      redirect_to posts_path, notice: 'Your post was updated successfully'
     else
       render 'edit'
     end

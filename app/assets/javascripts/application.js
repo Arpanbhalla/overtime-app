@@ -12,6 +12,7 @@
 //
 //= require jquery2
 //= require materialize-sprockets
+//= require gritter
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
